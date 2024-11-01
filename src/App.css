@@ -1,0 +1,86 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+
+
+
+
+/* General link styles */
+a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Default text color */
+  padding: 10px 15px; /* Padding around the links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect */
+a:hover {
+  background-color: #ec0808; /* Light gray background on hover */
+  color: #7300ff; /* Change text color on hover */
+}
+
+/* Active link styles */
+a.active {
+  font-weight: bold; /* Bold for active link */
+  color: #ff00aa; /* Color for active link */
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-around; /* Space between links */
+  background-color: #ffffff; /* Background color for the navbar */
+  padding: 10px 0; /* Padding for the navbar */
+  border-bottom: 1px solid #ccc; /* Bottom border */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .navbar {
+      flex-direction: column; /* Stack links vertically on small screens */
+      align-items: center; /* Center align */
+  }
+}
